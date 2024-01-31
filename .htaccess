@@ -1,0 +1,38 @@
+# .htaccess
+
+# Turn on RewriteEngine
+RewriteEngine On
+
+# Set the base directory of the application
+RewriteBase /
+
+# Specify the default index file (adjust as needed)
+DirectoryIndex index.html
+
+# Redirect requests to existing files or directories directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite rules for PHP files
+# Direct requests to 'tools' directory PHP files
+RewriteRule ^tools/(.*)$ tools/$1.php [L,QSA]
+
+# Custom error pages
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+ErrorDocument 502 /502.html
+ErrorDocument 503 /503.html
+ErrorDocument 504 /504.html
+ErrorDocument 505 /505.html
+
+# PHP settings (adjust as needed)
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+php_value max_execution_time 300
+php_value max_input_time 300
+
+# Enable gzip compression for text, HTML, XML, CSS, and JavaScript files
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript application/javascript
+</IfModule>
