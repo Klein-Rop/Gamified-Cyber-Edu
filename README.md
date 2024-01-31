@@ -30,9 +30,9 @@ copies or substantial portions of the Software.
     A cyber safety and security awareness platform focused on children and their caretakers.
     <br />
     ·
-    <a href="https://github.com/SoftCysec/Gamified-Cybersecurity/issues">Report Bug</a>
+    <a href="https://github.com/Klein-Rop/Gamified-Cyber-Edu/issues">Report Bug</a>
     ·
-    <a href="https://github.com/SoftCysec/Gamified-Cybersecurity/issues">Request Feature</a>
+    <a href="https://github.com/Klein-Rop/Gamified-Cyber-Edu/issues">Request Feature</a>
   </p>
 </div>
 
@@ -72,8 +72,8 @@ Distributed under the GPL-3.0 license. See `LICENSE` for more information.
 
 ## Contact
 
-Project Link: [https://github.com/SoftCysec/Gamified-Cybersecurity](https://github.com/SoftCysec/Gamified-Cybersecurity)
+Project Link: [https://github.com/Klein-Rop/Gamified-Cyber-Edu](https://github.com/Klein-Rop/Gamified-Cyber-Edu)
 
-Website: [https://squre-it.onrender.com](squre-it.netlify.app)
+Website: [https://squre-it.onrender.com](squre-it.onrender.com)
 
 <p align="right">(<a href="#readme-top">⬆️</a>)</p>
