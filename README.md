@@ -93,7 +93,11 @@ docker run -d -p 80:80 softcysec/gamified-cybersec:v4-latest
 This command will start the container and map port 80 in the container to port 8080 on your host machine.
 3. Access the application:
 
-Open your web browser and navigate to ```http://localhost:8080```. You should see the Gamified Cybersecurity application running.
+Open your web browser and navigate to 
+```
+http://localhost:8080
+```
+You should see the Gamified Cybersecurity application running.
 
 
 # Stopping the Application
