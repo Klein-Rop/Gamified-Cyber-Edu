@@ -8,7 +8,11 @@ if (isset($input1) && isset($input2)) {
     if ((intval($input1) > 0) && (intval($input2) >= 0)) {
         $int1 = is_numeric($input1) ? (int)$input1 : 4;
         $int2 = is_numeric($input2) ? (int)$input2 : 2;
-        exec("/usr/bin/python3 ../py/diceware.py {$int1} {$int2}", $output);
+        exec("/usr/bin/python3 ../py/diceware.py {$int1} {$int2} 2>&1", $output, $return_var);
+        if ($return_var !== 0) {
+            $msg = '<span style="color:red">Error executing Python script.</span>';
+        }
+
     }
     elseif (intval($input2) < 0) {
         $msg = '';

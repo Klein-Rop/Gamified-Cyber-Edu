@@ -6,16 +6,30 @@ RewriteEngine On
 # Set the base directory of the application
 RewriteBase /
 
-# Specify the default index file (adjust as needed)
+# Specify the default index file
 DirectoryIndex index.html
 
 # Redirect requests to existing files or directories directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Rewrite rules for PHP files
-# Direct requests to 'tools' directory PHP files
-RewriteRule ^tools/(.*)$ tools/$1.php [L,QSA]
+# Pretty URL rewrite rules for main pages
+RewriteRule ^children/?$ children.html [L]
+RewriteRule ^caretakers/?$ caretakers.html [L]
+RewriteRule ^quiz/?$ quiz.html [L]
+RewriteRule ^gameroom/?$ gameroom.html [L]
+RewriteRule ^toolkit/?$ toolkit.html [L]
+
+# Rewrite rules for articles within subdirectories
+RewriteRule ^caretakers-articles/(.*)$ caretakers-articles/$1.html [L]
+RewriteRule ^children-articles/(.*)$ children-articles/$1.html [L]
+
+# Rewrite rules for tools in the tools directory
+RewriteRule ^tools/password$ tools/password.php [L]
+RewriteRule ^tools/keepass$ tools/keepass.html [L]
+RewriteRule ^tools/mfa$ tools/mfa.html [L]
+RewriteRule ^tools/haveibeenpwned$ tools/haveibeenpwned.html [L]
+RewriteRule ^tools/virustotal$ tools/virustotal.html [L]
 
 # Custom error pages
 ErrorDocument 403 /403.html
