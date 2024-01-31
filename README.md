@@ -71,10 +71,12 @@ Before you begin, make sure you have the following installed:
 
 First, clone the repository to your local machine:
 
-```bash
+```
 git clone https://github.com/Klein-Rop/Gamified-Cyber-Edu.git
+```
+```
 cd Gamified-Cyber-Edu
-
+```
 
 # Running the Application with Docker
 
