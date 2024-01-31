@@ -20,7 +20,7 @@ copies or substantial portions of the Software.
 
 <br />
 <div align="center">
-  <a href="https://github.com/SoftCysec/Gamified-Cybersecurity">
+  <a href="https://github.com/Klein-Rop/Gamified-Cyber-Edu">
     <img src="img/logo.png" alt="Logo" height="100">
   </a>
 
@@ -51,16 +51,60 @@ copies or substantial portions of the Software.
 
 
 
+# Getting Started
+
+## Gamified Cybersecurity
+
+This repository contains the source code for the Gamified Cybersecurity project, a web application focused on cyber safety and security awareness.
+
 ## Getting Started
 
-The website is easy to host by design and is primarily static and client-side.
-This is done to ensure user privacy, even though some functionalities may work better otherwise.
-As a result of that, some design choices may seem odd, a prime example of which is the primitive search function.
-You only need a web server with PHP, Python, and the Diceware command line tool for generating passwords.
+These instructions will guide you through setting up and running the project on your local machine for development and testing purposes.
 
-<p align="right">(<a href="#readme-top">⬆️</a>)</p>
+### Prerequisites
+
+Before you begin, make sure you have the following installed:
+- Git
+- Docker
+
+### Cloning the Repository
+
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/Klein-Rop/Gamified-Cyber-Edu.git
+cd Gamified-Cyber-Edu
 
 
+# Running the Application with Docker
+
+The application is containerized with Docker, making it easy to set up and run. To start the application:
+
+1. Pull the Docker image from Docker Hub:
+```
+docker pull softcysec/gamified-cybersec:v4-latest
+```
+2. Run the Docker container:
+```
+docker run -p 80:80 softcysec/gamified-cybersec:v4-latest
+```
+This command will start the container and map port 80 in the container to port 8080 on your host machine.
+3. Access the application:
+
+Open your web browser and navigate to `http://localhost:8080`. You should see the Gamified Cybersecurity application running.
+
+
+# Stopping the Application
+
+To stop the running Docker container:
+1. Find the container ID:
+```
+docker ps
+```
+2. Stop the container:
+```
+docker stop <container-id>
+```
 
 ## License
 
