@@ -31,6 +31,20 @@ RewriteRule ^tools/mfa$ tools/mfa.html [L]
 RewriteRule ^tools/haveibeenpwned$ tools/haveibeenpwned.html [L]
 RewriteRule ^tools/virustotal$ tools/virustotal.html [L]
 
+# Rewrite rules for games in the games directory
+RewriteRule ^games/scramble$ games/scramble.html [L]
+RewriteRule ^games/wordsearch$ games/wordsearch.html [L]
+RewriteRule ^games/wspuzzle$ games/wspuzzle.html [L]
+RewriteRule ^games/wspuzzlel$ games/wspuzzlel.html [L]
+
+# Rewrite rules
+RewriteRule ^start-quiz$ start-quiz.html [L]
+RewriteRule ^search$ search.html [L]
+RewriteRule ^feedback$ feedback.php [L]
+RewriteRule ^contact$ contact.html [L]
+RewriteRule ^about$ about.html [L]
+RewriteRule ^captcha$ captcha.php [L]
+
 # Custom error pages
 ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
