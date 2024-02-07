@@ -20,8 +20,12 @@ RewriteRule ^quiz/?$ quiz.html [L]
 RewriteRule ^gameroom/?$ gameroom.html [L]
 RewriteRule ^toolkit/?$ toolkit.html [L]
 
+
 # Rewrite rules for articles within subdirectories
+RewriteCond %{REQUEST_URI} !\.html$
 RewriteRule ^caretakers-articles/(.*)$ caretakers-articles/$1.html [L]
+
+RewriteCond %{REQUEST_URI} !\.html$ 
 RewriteRule ^children-articles/(.*)$ children-articles/$1.html [L]
 
 # Rewrite rules for tools in the tools directory
