@@ -84,11 +84,11 @@ The application is containerized with Docker, making it easy to set up and run. 
 
 1. Pull the Docker image from Docker Hub:
 ```
-docker pull softcysec/gamified-cybersec:v4-latest
+docker pull kleinrop/gamified-cyber-edu:v2
 ```
 2. Run the Docker container:
 ```
-docker run -d -p 80:80 softcysec/gamified-cybersec:v4-latest
+docker run -d -p 80:80 kleinrop/gamified-cyber-edu:v2
 ```
 This command will start the container and map port 80 in the container to port 8080 on your host machine.
 3. Access the application:
@@ -124,6 +124,6 @@ Distributed under the GPL-3.0 license. See `LICENSE` for more information.
 
 Project Link: [https://github.com/Klein-Rop/Gamified-Cyber-Edu](https://github.com/Klein-Rop/Gamified-Cyber-Edu)
 
-Website: [https://squre-it.onrender.com](squre-it.onrender.com)
+Website: [https://squreit.onrender.com](squreit.onrender.com)
 
 <p align="right">(<a href="#readme-top">⬆️</a>)</p>
