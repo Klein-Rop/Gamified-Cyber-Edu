@@ -19,6 +19,7 @@ RewriteRule ^caretakers/?$ caretakers.html [L]
 RewriteRule ^quiz/?$ quiz.html [L]
 RewriteRule ^gameroom/?$ gameroom.html [L]
 RewriteRule ^toolkit/?$ toolkit.html [L]
+RewriteRule ^login/?$ login.html [L]
 
 
 # Rewrite rules for articles within subdirectories
